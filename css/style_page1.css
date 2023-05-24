@@ -65,7 +65,7 @@ header a {
 .spot dl {
 	position: absolute;
 	bottom: 0px;
-	left: 330px;
+	left: 500px;
 	text-align: left;
 	font-family: 'Courier New', Courier, monospace, sans-serif;
 	line-height: 80%
@@ -77,7 +77,6 @@ header a {
 	font-weight: 700;
 	color: #ffffff;
 	display: inline-block;
-	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	width: 70%;
@@ -93,7 +92,8 @@ header a {
 	font-family: calibri, sans-serif;
 	color: #ffffff;
 	text-align: left;
-	width: 42%
+	width: 42%;
+	margin-left: 250px;
 }
 
 
@@ -124,14 +124,14 @@ header a {
 }
 
 nav {
-	width: 18%;
+	width: 25%;
 	height: 70%;
 	float: left;
 	background: orange;
 }
 
 aside {
-	width: 18%;
+	width: 25%;
 	height: 70%;
 	float: left;
 	background: orange;
@@ -154,6 +154,11 @@ section {
 	font-weight: 700;
 	line-height: 160%;
 	text-shadow: 0px 2px 6px gray;
+}
+#section3 img {
+	align-items: center;
+	width: 75%;
+	height: 75%;
 }
 
 .scrollToTop {
