@@ -5,6 +5,12 @@ html, body {
 #maindiv {
 	position:relative; overflow:hidden;
 }
+span {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	
+}
 header{ 
 	width: 100%; height:100px;
 }
@@ -17,13 +23,13 @@ header a{
 	width: 120px;
 	height: 90px;
 }
-.gnb-menu li{float:left; height:90px; margin:0 1px padding: 0px;}
+.gnb-menu li{float:left; height:90px; margin:0 1px; padding: 0px;}
 .gnb-menu {float:right; margin-right: 15%}
 .gnb-menu li a{display: flex;
         	justify-content: center;
         align-items: center; text-align:center; 
         line-height: 1px;font-weight:500;font-size:20px;
-        font-family: 'Noto Sans CJK KR Regular'sans-serif; font-color:"#ffffff";}
+        font-family: 'Noto Sans CJK KR Regular'sans-serif; color:"#ffffff";}
 .gnb-menu li a:hover{border-bottom: 3px solid #ffffff; text-decoration: none; color:#ffffff}
 
 .spot{position:relative; height:60%;}
