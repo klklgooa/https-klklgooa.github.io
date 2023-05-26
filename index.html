@@ -5,12 +5,49 @@
 <title>Keyard</title>
 <link type="text/css" rel="stylesheet" href="css/reset.css">
 <link type="text/css" rel="stylesheet" href="css/style_index.css">
+<script>
+	var audio =  new Audio();
+	function stopMusic() {
+		audio.pause();
+	}
+
+	function check() {
+		if(audio.paused == false){
+			stopMusic()
+		}
+		
+		const genderNodeList
+			= document.getElementsByName('music');
+
+		genderNodeList.forEach((node) => {
+		 if(node.checked)  {
+		 playMusic(node.value);
+		 }       
+		})
+	}
+
+	function playMusic(choice) {   
+		audio = new Audio(choice);
+		audio.load();
+		audio.play();
+	}
+	function stop() {
+		audio.pause();
+	}
+</script>
 </head>
 <body>
 	
 	<div id="maindiv">
 	<div id="wrap" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/varmilo.jpg); background-repeat: no-repeat;">
 		<header>
+			<span>
+				<input type="radio" name="music" value="music/red.mp3" checked>red
+				<input type="radio" name="music" value="music/blue.mp3" >blue
+				
+				<input type="submit" value="Play" onclick="check()">  
+				<input type="button" value="Stop" onclick="stop()">                  
+			</span>
 		<a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logoEx1.png" alt="logo"></a>
 		<ul class="gnb-menu">
       		<li><a href="#" class="active" title="MENU1">Today</a></li>
@@ -90,7 +127,6 @@
 				
 			</div>		
 	  	</div>
-
 
 	</section>
 	<aside>
