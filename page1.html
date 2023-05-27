@@ -47,14 +47,28 @@
             
 
             <header>
-                <span>
+                <details id="music_details">
+                    <summary>Music</summary>
+                    <ul style="float: left;">
+                        <li><input type="radio" name="music" value="music/red.mp3" checked>reddddddddddddddd</li>
+                        <li><input type="radio" name="music" value="music/blue.mp3" >bluedddddddddd</li>
+                    </ul>
+                    <span>
+                        
+                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">  
+                        <input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">
+                                          
+                    </span>
+                </details>
+                
+                <!--<span>
                     <input type="radio" name="music" value="music/red.mp3" checked>red
                     <input type="radio" name="music" value="music/blue.mp3" >blue
                     
-                    <input type="submit" value="Play" onclick="check()">  
-                    <input type="button" value="Stop" onclick="stop()">                  
+                    <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">  
+				    <input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">                  
                 </span>
-
+                -->
                 <a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logoEx1.png" alt="logo"></a>
                 <ul class="gnb-menu">
                     <li><a href="#" class="active" title="MENU1">Today</a></li>
@@ -81,7 +95,6 @@
         </div>
         <nav>
             <div id="nav">
-                <h3>nav</h3>
             </div>
         </nav>
         <section>
@@ -94,7 +107,18 @@
 
             </div>
             <div id="section_blank3"></div>
-
+            <div id="parts_explain">
+                <img src="image/keychron.jpg" style="width: 900px; height: 900px;">
+                
+            </div>
+            <span id="parts_explain_p1">To make the only keyboard in the world, <br></span>
+            <span id="parts_explain_p2">you need to know the types of components and 
+                how they are used to complete the keyboard.<br></span>     
+            <span id="parts_explain_p3"> Learn the information listed below 
+                to create your own keyboard.</span>    
+                
+            
+            <div id="section_blank4"></div>
             <div id="section3">
                 <details class="housing">
                 <summary>1. 하우징 (Click here for more)</summary><br>               
@@ -197,12 +221,11 @@
                 </details>    
             
             </div>
-
+            <div id="section_blank5"></div>
 
         </section>
         <aside>
             <div id="aside">
-                <h3>aside</h3>
             </div>
         </aside>
 
