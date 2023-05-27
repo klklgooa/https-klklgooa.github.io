@@ -27,7 +27,32 @@ header a {
 	width: 120px;
 	height: 90px;
 }
-
+#music_details {
+	position: absolute;
+}
+#music_details summary, li {
+	color:#fff;
+}
+#play_button {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-right: 4px;
+}
+#stop_button {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-left: -3px;
+}
+.music_button {
+	border:1px solid skyblue;
+	background-color: #fff;
+	color: skyblue;
+	padding: 5px;
+}
+.music_button:hover {
+	color: white;
+	background-color: skyblue;
+}
 .gnb-menu li {
 	float: left;
 	height: 90px;
@@ -127,18 +152,16 @@ nav {
 	width: 18%;
 	height: 70%;
 	float: left;
-	background: orange;
 }
 
 aside {
-	width: 18%;
+	width: 25%;
 	height: 70%;
 	float: left;
-	background: orange;
 }
 
 section {
-	margin-left: 7%;
+	margin-left: 25%;
 	width: 64%;
 	height: 70%;
 	float: left;
@@ -161,6 +184,35 @@ section {
 	line-height: 160%;
 	text-shadow: 0px 2px 6px gray;
 }
+#parts_explain_p1 {
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 160%;
+	margin-left: 320px;
+}
+#parts_explain_p2 {
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 160%;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+#parts_explain_p3 {
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 160%;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+#section_blank4 {
+	height: 300px;
+}
 #section3 summary {
 	outline: none;
 	cursor: pointer;
@@ -173,6 +225,9 @@ section {
 	align-items: center;
 	width: 75%;
 	height: 75%;
+}
+#section_blank5 {
+	height: 400px;
 }
 
 .scrollToTop {
