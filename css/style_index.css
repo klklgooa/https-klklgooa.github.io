@@ -26,9 +26,21 @@ header a{
 #music_details {
 	position: absolute;
 }
-#music_details summary, li {
-	color:#fff;
+#music_details li {
+	width: 220px;
 }
+#music_details summary, li, label {
+	color:#fff;
+	cursor: pointer;
+	margin-bottom: 6px;
+}
+#music_details label {
+	position: absolute;
+}
+#music_details label:hover {
+	font-weight: 700;
+}
+
 #play_button {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -44,6 +56,14 @@ header a{
 	background-color: #fff;
 	color: skyblue;
 	padding: 5px;
+}
+
+#play_button {	
+	position: absolute;
+}
+#stop_button {
+	position: absolute;
+	margin-left: 37px;
 }
 .music_button:hover {
 	color: white;
