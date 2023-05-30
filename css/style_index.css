@@ -20,8 +20,12 @@ header img{
 	margin-left: 18%;
 }
 header a{
-	width: 120px;
+	width: 120px; /*120 90*/
 	height: 90px;
+}
+#music_details div{
+	height: 20px;
+	margin-top: 0px;
 }
 #music_details {
 	position: absolute;
@@ -29,10 +33,9 @@ header a{
 #music_details li {
 	width: 220px;
 }
-#music_details summary, li, label {
+#music_details summary, li, label{
 	color:#fff;
 	cursor: pointer;
-	margin-bottom: 6px;
 }
 #music_details label {
 	position: absolute;
@@ -40,7 +43,6 @@ header a{
 #music_details label:hover {
 	font-weight: 700;
 }
-
 #play_button {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -301,7 +303,7 @@ footer {
 }
 #footer_about #table2 {
 	margin-left: 150px;
-	width: 600px;
+	width: 550px;
 	color: white;
 }
 
@@ -323,13 +325,13 @@ footer {
 	width: 150px;
 }
 #footer_copyright {
-	margin-top: 40px;
+	margin-top: 45px;
 }
 
 #footer_copyright address {
-	width:1200px; margin: 0 auto; text-align: center; color: #ccc;
+	width:100%; margin: 0 auto; text-align: center; color: #ccc;
 }
 #footer_copyright p {
-	width:1200px; margin: 0 auto; text-align: center; color: #ccc;
+	width:100%; margin: 0 auto; text-align: center; color: #ccc;
 }
-footer p{margin-top: 5px; font-size:12px;height: 170px;}
+footer p{margin-top: 10px; font-size:12px;height: 120px;}
