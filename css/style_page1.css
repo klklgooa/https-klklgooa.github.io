@@ -27,16 +27,19 @@ header a {
 	width: 120px;
 	height: 90px;
 }
+#music_details div{
+	height: 20px;
+	margin-top: 0px;
+}
 #music_details {
 	position: absolute;
 }
 #music_details li {
 	width: 220px;
 }
-#music_details summary, li, label {
+#music_details summary, li, label{
 	color:#fff;
 	cursor: pointer;
-	margin-bottom: 6px;
 }
 #music_details label {
 	position: absolute;
@@ -299,7 +302,7 @@ footer {
 
 #footer_about #table2 {
 	margin-left: 150px;
-	width: 600px;
+	width: 550px;
 	color: white;
 }
 
@@ -308,7 +311,6 @@ footer {
 	height: 40px;
 	font-size: 17px;
 }
-
 #footer_about .th {
 	height: 80px;
 	font-size: 25px;
@@ -343,7 +345,7 @@ footer {
 }
 
 footer p {
-	margin-top: 5px;
+	margin-top: 8px;
 	font-size: 12px;
 	height: 170px;
 }
