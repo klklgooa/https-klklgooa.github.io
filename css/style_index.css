@@ -77,15 +77,20 @@ header a{
         	justify-content: center;
         align-items: center; text-align:center; 
         line-height: 1px;font-weight:500;font-size:20px;
-        font-family: 'Noto Sans CJK KR Regular'sans-serif; color:"#ffffff";}
-.gnb-menu li a:hover{border-bottom: 3px solid #ffffff; text-decoration: none; color:#ffffff}
+        font-family: 'Noto Sans CJK KR Regular'sans-serif; color:"#ffffff";
+}
+.gnb-menu li a:hover{border-bottom: 3px solid #ffffff;
+	 text-decoration: none; color:#ffffff; font-weight: 800;
+	 
+}
 
 .spot{position:relative; height:60%;}
 .spot dl{position:absolute; bottom: 0px; left: 330px; text-align: left; font-family: 'Courier New', Courier, monospace, sans-serif; line-height: 80%}
-.spot dt{margin-bottom: 20px; font-size: 80px; font-weight:700; color: #ffffff; display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space: nowrap; width:70%; line-height: 110%}
+.spot dt{margin-bottom: 20px; font-size: 80px; font-weight:700; color: #ffffff; display:inline-block;
+	 text-overflow:ellipsis; white-space: nowrap; width:70%; line-height: 110%}
 
-.spot dd{display:-webkit-box; overflow:hidden; -webkit-line-clamp:2; -webkit-box-orient:vertical;
-    font-size: 22px; font-family:calibri, sans-serif; color: #ffffff; text-align: left; width:42%}
+.spot dd{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;
+    font-size: 22px; font-family:calibri, sans-serif; color: #ffffff; text-align: left; width:60%}
 .spot a {margin-top: 400px; margin-left: 80px;}    
 .spot button {position: absolute;  text-align: center; left: 330px;}
 .spot button {width: 130px; height:40px; margin-top:500px; border-radius: 20px;
@@ -168,6 +173,9 @@ section {
 	width: 580px; height: 520px;
 	display: inline;
 }
+#section2_img img:hover{
+	transform: scale(1.05);	
+} 
 #section2 img {
 	position: absolute;
 	width: 580px; height: 520px;
@@ -177,7 +185,7 @@ section {
   -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 6px;
+  border-radius: 6px; transition: all 0.2s linear; overflow: hidden;
 }
 #section_blank3 {
 	height: 300px;
@@ -219,6 +227,9 @@ section {
 	margin-left: 600px;
 	display: inline;
 }
+#section3_img img:hover{
+	transform: scale(1.05);	
+} 
 #section3 img {
 	position: absolute;
 	width: 580px; height: 520px;
@@ -228,22 +239,44 @@ section {
   -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-  border-radius: 6px;
+  border-radius: 6px; transition: all 0.2s linear; overflow: hidden;
 }
 #Gazzew{
 	margin-left: 600px;
 }
-
-
-
+#images{
+	width: 1000px;
+	padding-left: 100px;
+	margin-left: 20%;
+}
+#images img{
+	width: 200px;
+	height: 200px;
+	border-radius: 6px;
+	opacity: 0.7;
+	transition: all 0.2s linear;
+	margin-left: 15px;
+}
+#sound_absorption {
+	border: solid 1px #eee;
+}
+#images img:hover{
+	width: 200px;
+	height: 200px;
+	opacity: 100%;
+	transform: scale(1.15);
+	
+}
+#section_blank4 {
+	height: 300px;
+}
 section {
-	height: 2400px;
+	height: 3000px;
 }
 section p {
 	margin-top: 18px;
 	color: gray;
 }
-
 /*
 .scrollToTop_active{
 	width:50px;
