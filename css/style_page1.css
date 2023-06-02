@@ -8,8 +8,9 @@ body {
 }
 #maindiv {
 	position: relative;
+	overflow: hidden;
 }
-span {
+header span {
 	position: absolute;
 	width: 100px;
 	height: 100px;
@@ -22,7 +23,7 @@ header{
 	margin-left: 18%;
 }
 header img {
-	width: 260px;
+	width: 150px;
 	height: 50px;	
 }
 header a {
@@ -186,7 +187,7 @@ aside {
 }
 
 section {
-	margin-left: 25%;
+	margin-left: 26%;
 	width: 64%;
 	height: 70%;
 	float: left;
@@ -269,16 +270,14 @@ section {
 }
 
 footer {
-	width: 100%;
-	clear: both;
+	width: 100%; 
+	clear: both; 
 }
-
 #footer {
 	position: relative;
 	height: 350px;
 	background-color: #787878;
 }
-
 #footer_about {
 	height: 200px;
 	width: 1200px;
@@ -286,28 +285,23 @@ footer {
 	margin-left: 420px;
 	color: #ccc
 }
-
 #footer_about div {
 	width: 200px;
 	margin-right: 10px;
 }
-
 #footer_about #table1 {
 	margin-left: 100px;
 }
-
 #table1 td {
 	color: white;
 	height: 90px;
 	font-size: 17px;
 }
-
 #footer_about #table2 {
 	margin-left: 150px;
 	width: 550px;
 	color: white;
 }
-
 #table2 td {
 	color: white;
 	height: 40px;
@@ -318,37 +312,29 @@ footer {
 	font-size: 25px;
 	font-weight: 800;
 }
-
 #footer_about_ul {
 	width: 100px;
 	display: inline;
 }
-
 #footer_about_logo img {
-	width: 260px;
+	width: 150px;
 	height: 50px;
 }
-
 #footer_copyright {
-	margin-top: 40px;
+	margin-top: 45px;
 }
-
 #footer_copyright address {
-	width: 1200px;
-	margin: 0 auto;
-	text-align: center;
-	color: #ccc;
+	width:100%; margin: 0 auto; text-align: center; color: #ccc;
 }
-
 #footer_copyright p {
-	width: 1200px;
-	margin: 0 auto;
-	text-align: center;
-	color: #ccc;
+	width:100%; margin: 0 auto; text-align: center; color: #ccc;
 }
-
-footer p {
-	margin-top: 8px;
-	font-size: 12px;
-	height: 170px;
+footer p{margin-top: 10px; font-size:12px;height: 120px;}
+#logo_new {
+	font-family: 'EF_jejudoldam';
+	font-size: 50px;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin-top: 500px;
 }
