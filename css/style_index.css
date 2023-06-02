@@ -330,35 +330,19 @@ section p {
 	margin-top: 18px;
 	color: gray;
 }
-/*
-.scrollToTop_active{
-	width:50px;
-height: 50px;
-position:fixed;
-right: 100px;
-bottom: 100px;
-}
-.scrollToTop_active img {
-	width:50px;
-	height: 50px;
-}
-*/
 .scrollToTop {
-width:50px;
-height: 50px;
-position:fixed;
-right: 100px;
-bottom: 100px;
+	position:fixed;
+	right: 100px;
+	bottom: 100px;
 }
-
 .scrollToTop img {
 	width:30px;
 	height: 25px;
+	opacity: 0.6;
 }
-/*.scrollToTop img:active{
- 	display: none;
-}*/
-
+.scrollToTop img:hover {
+	opacity: 1;
+}
 footer {
 	width: 100%; 
 	clear: both; 
