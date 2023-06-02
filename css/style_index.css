@@ -4,6 +4,7 @@ html, body {
 }
 #maindiv {
 	position:relative;
+	overflow: hidden;
 }
 span {
 	position: absolute;
@@ -19,7 +20,7 @@ header{
 	margin-left: 18%;
 }
 header img {
-	width: 260px;
+	width: 150px;
 	height: 50px;	
 }
 header a {
@@ -161,9 +162,10 @@ section {
 	width: 580px;
 	height: 520px;
 	position: relative;
+	margin-left: 6%;
 }
 #section2_p {
-	margin-left: 700px;
+	margin-left: 115%;
 }
 #section2_p_blank {
 	height: 100px;
@@ -198,6 +200,9 @@ section {
 	box-shadow: 5px 5px 5px 5px gray;
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     border-radius: 6px; transition: all 0.2s linear; overflow: hidden;
+}
+#switches_tag {
+	margin-left: 6%;
 }
 #section_blank3 {
 	height: 300px;
@@ -252,7 +257,7 @@ section {
   	border-radius: 6px; transition: all 0.2s linear; overflow: hidden;
 }
 #Gazzew{
-	margin-left: 600px;
+	margin-left: 49%;
 }
 #section4 p{
 	width: 500px;
@@ -304,7 +309,7 @@ section {
 }
 #image_tag {
 	width: 1000px;
-	padding-left: 12px;
+	padding-left: 1%;
 }
 #image_tag td {
 	color: #aaa;
@@ -402,7 +407,7 @@ footer {
 	display: inline;
 }
 #footer_about_logo img {
-	width: 260px;
+	width: 150px;
 	height: 50px;
 }
 #footer_copyright {
