@@ -255,20 +255,19 @@ section {
 #section_blank5 {
 	height: 400px;
 }
-
 .scrollToTop {
-	width: 50px;
-	height: 50px;
-	position: fixed;
+	position:fixed;
 	right: 100px;
 	bottom: 100px;
 }
-
 .scrollToTop img {
-	width: 30px;
+	width:30px;
 	height: 25px;
+	opacity: 0.6;
 }
-
+.scrollToTop img:hover {
+	opacity: 1;
+}
 footer {
 	width: 100%; 
 	clear: both; 
