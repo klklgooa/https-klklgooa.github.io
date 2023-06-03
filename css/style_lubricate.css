@@ -117,7 +117,7 @@ header a {
 .spot dl {
 	position: absolute;
 	bottom: 0px;
-	left: 35%;
+	left: 500px;
 	text-align: left;
 	font-family: 'Courier New', Courier, monospace, sans-serif;
 	line-height: 80%
@@ -128,12 +128,14 @@ header a {
 	font-size: 80px;
 	font-weight: 700;
 	color: #ffffff;
+	display: inline-block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	width: 40%;
+	width: 70%;
 	line-height: 110%;
-    margin-right: 300px;
+    margin-left: 40px;
 }
+
 .spot dd {
 	display: -webkit-box;
 	overflow: hidden;
@@ -143,7 +145,7 @@ header a {
 	font-family: calibri, sans-serif;
 	color: #ffffff;
 	text-align: left;
-    margin-left: 11%;
+    margin-left: 250px;
 }
 #wrap {
 	width: 100%;
@@ -213,7 +215,7 @@ section {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 160%;
-	margin-left: 26%;
+	margin-left: 28%;
 }
 #parts_explain_p2 {
 	text-align: center;
@@ -221,7 +223,7 @@ section {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 160%;
-	margin-left: 17%;
+	margin-left: 15%;
 	margin-top: 20px;
 }
 #parts_explain_p3 {
@@ -230,9 +232,10 @@ section {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 160%;
-	margin-left: 18%;
+	margin-left: 24%;
 	margin-top: 20px;
 }
+
 #section_blank4 {
 	height: 300px;
 }
@@ -253,31 +256,27 @@ section {
 	height: 75%;
     margin-left: 20px;
 }
-#section3 p, details {
+#section3 p {
     word-wrap: break-word;
     text-align: center;
-}
-.section3_blank {
-    height: 120px;
 }
 
 #section_blank5 {
 	height: 200px;
 }
-
 .scrollToTop {
-	width: 50px;
-	height: 50px;
-	position: fixed;
+	position:fixed;
 	right: 100px;
 	bottom: 100px;
 }
-
 .scrollToTop img {
-	width: 30px;
+	width:30px;
 	height: 25px;
+	opacity: 0.6;
 }
-
+.scrollToTop img:hover {
+	opacity: 1;
+}
 footer {
 	width: 100%; 
 	clear: both; 
