@@ -8,14 +8,10 @@
     <link type="text/css" rel="stylesheet" href="css/style_absorb.css">
     <script>
         var audio = new Audio();
-        function stopMusic() {
-            audio.pause();
-        }
 
         function check() {
-            if (audio.paused == false) {
-                stopMusic()
-            }
+            if (audio.paused == false)
+                stop()
 
             const genderNodeList
                 = document.getElementsByName('music');
@@ -26,7 +22,6 @@
                 }
             })
         }
-
         function playMusic(choice) {
             audio = new Audio(choice);
             audio.load();
@@ -42,34 +37,46 @@
 
     <div id="maindiv">
         <div id="wrap"
-            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/1.jpg); background-repeat: no-repeat;">
+            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/absorb_main.png); background-repeat: no-repeat;">
 
             <header>
                 <details id="music_details">
                     <summary>Music</summary>
                     <ul style="float: left;">
-                        <li><div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label for="Milky">mStone_Milky </label></div></li>
-                        
-                        <li><div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label for="Gatron">Gatron_Brown</label></div></li>
-    
-                        <li><div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label for="Meteor">SP-star_Meteor_white</label></div></li>
+                        <li>
+                            <div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label
+                                    for="Milky">mStone_Milky </label></div>
+                        </li>
+
+                        <li>
+                            <div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label
+                                    for="Gatron">Gatron_Brown</label></div>
+                        </li>
+
+                        <li>
+                            <div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label
+                                    for="Meteor">SP-star_Meteor_white</label></div>
+                        </li>
                     </ul>
                     <span>
-                        
-                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">  
+
+                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">
                         <input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">
-                                          
+
                     </span>
                 </details>
 
-                <span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png" alt="logo"></a></span>
+                <span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png"
+                            alt="logo"></a></span>
                 <ul class="gnb-menu">
-                    <li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4" class="active" title="MENU1">News</a></li>
+                    <li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4"
+                            class="active" title="MENU1">News</a></li>
                     <li><a href="https://klklgooa.github.io/parts.html" class="active" title="MENU2">Parts</a></li>
-                    <li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a></li>
+                    <li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a>
+                    </li>
                     <li><a href="https://klklgooa.github.io/absorb.html" class="active" title="MENU4">Absorb</a></li>
                     <li><a href="https://geon.works/" class="active" title="MENU5">Sell</a></li>
-              </ul>
+                </ul>
             </header>
 
             <div class="spot">
@@ -104,7 +111,8 @@
             <p><br></p>
             <p><br></p>
             <span id="parts_explain_p1" class="parts_explain">Perform sound absorption<br></span>
-            <span id="parts_explain_p2" class="parts_explain">customization of the keyboard with various types<br></span>
+            <span id="parts_explain_p2" class="parts_explain">customization of the keyboard with various
+                types<br></span>
             <span id="parts_explain_p3" class="parts_explain">of sound absorption materials and information.</span>
             <div id="section_blank4"></div>
 
@@ -120,21 +128,21 @@
                     흡음재는 많은 구멍으로 이루어진 다공질형으로 구멍으로 소리가 들어가 열이 되어 소리 에너지가 줄어드는 원리로써
                     사용합니다.<br>
                     따라서 위에 언급한 재질뿐만 아니라 원리에 적합하다면 어느 물질을 넣어도 문제가 없습니다.
-                    단, 전기신호로 동작하는 키보드 특성으로 문제가 없을 절연 물질을 선택해야 합니다.   
+                    단, 전기신호로 동작하는 키보드 특성으로 문제가 없을 절연 물질을 선택해야 합니다.
                 </p>
                 <p><br></p>
                 <p><br></p>
                 <img src="image/absorp3.png" style="width: 650px; height: 600px; margin-left: 120px;">
                 <p><br></p>
                 <p>
-                    O링(실리콘링)은 키캡 내부의 스위치와 결합되는 십자로 홈이 나있는 기둥에 동그란 모양의 고무나 
-                    실리콘으로 된 링을 끼워 타건시에 키캡이 스위치 몸통이나 키보드 윗판을 때리지 않게 막아주는 
+                    O링(실리콘링)은 키캡 내부의 스위치와 결합되는 십자로 홈이 나있는 기둥에 동그란 모양의 고무나
+                    실리콘으로 된 링을 끼워 타건시에 키캡이 스위치 몸통이나 키보드 윗판을 때리지 않게 막아주는
                     키보드 튜닝 재료입니다.<br>
-                    장점은 물렁한 O링이 압력에 대해 완충재 역할을 하여 소음을 조금 줄여준다는 것이고 
+                    장점은 물렁한 O링이 압력에 대해 완충재 역할을 하여 소음을 조금 줄여준다는 것이고
                     <br>
                     단점으로는 O링을 끼우면 스트로크가 짧아진다는 것입니다. 스위치가 압력을 받고 내려가는 깊이가 얕아져
                     적응되지 않았다면 이질감이 느껴질 것이고 사용자의 타건 습관에 따라 답답하게 느껴질 수도 있습니다.<br>
-                    O링은 0.4mm / 0.2mm 두께로 커스텀 사이트에서 간단하게 구매하실 수 있습니다.                   
+                    O링은 0.4mm / 0.2mm 두께로 커스텀 사이트에서 간단하게 구매하실 수 있습니다.
                 </p>
                 <p><br></p>
                 <p><br></p>
@@ -143,80 +151,89 @@
                 <p>다음은 집에서 쉽게 할 수 있는 '테이핑 모드'입니다.<br>
                     먼저 전기가 통하지 않는 절연테이프를 준비하고 PCB를 분해해 줍니다. 절연테이프를 PCB뒷면에 붙이는 작업이기에<br>
                     변심으로 추후 떼었을 때 끈적함이 남지않는 절연테이프나 종이테이프를 추천합니다.</p>
-                    <p><br></p>
+                <p><br></p>
                 <p><br></p>
                 <img src="image/absorp5.png" style="width: 650px; height: 400px; margin-left: 120px;">
                 <p><br></p>
                 <p>준비가 되었다면 일단 테이프를 PCB 뒷부분에 빠지는 부분 없이 붙여줍니다. <br>
                     이때 PCB 뒤 커넥터 연결부에 구멍을 뚫어줘야 하기 때문에 위치를 잘 기억해둡니다.<br>
-                    </p>
-                     <p><br></p>     
+                </p>
+                <p><br></p>
                 <img src="image/absorp6.png" style="width: 650px; height: 400px; margin-left: 120px;">
-                <p><br></p> 
-                <p>'테이핑 모드'는 흡음에 유의미한 효과가 있기 때문에 경험이 없다면 <br>일단 테이프 한겹만 붙이고 키보드를 조립하고 테스트 
+                <p><br></p>
+                <p>'테이핑 모드'는 흡음에 유의미한 효과가 있기 때문에 경험이 없다면 <br>일단 테이프 한겹만 붙이고 키보드를 조립하고 테스트
                     해볼것을 추천합니다.</p>
-                    <p><br></p> 
+                <p><br></p>
                 <img src="image/absorp7.png" style="width: 650px; height: 400px; margin-left: 120px;">
-                <p><br></p> 
+                <p><br></p>
                 <p>앞서 언급했던 커넥터 연결이 필요한 PCB는 재조립하는 일이 없도록 커넥터 연결부분에 구멍뚫는 일을 까먹지 않도록 합니다.</p>
-                
-                    <div class="section3_blank"></div>   
-                    <p><br></p>         
-                        
+
+                <div class="section3_blank"></div>
+                <p><br></p>
+
                 <details>
                     <summary>다음은 흡음처리의 간단한 예시 입니다. (Click here for more)</summary>
-                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/5732998a9f1c08043a483ec4aacf7c03.jpg" alt="퀘이사존"></p>
-                <p>PCB에 '스위치 하부 흡음재'와 '스테빌라이저 하부 흡음재'를 붙인 모습입니다.</p> 
-                <p><br></p>
-                <p><br></p>
-                
-                
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/b612fc738bb8aec98f0bc46871263dc8.jpg" alt="퀘이사존"><br></p>
-                <p>PCB와 보강판 사이의 흡음을 위해 포론 기보강 흡음재를 추가합니다.</p>
-                <p><br></p>
-                <p><br></p>
-                <p>아래 사진과 같이 PCB와 보강판 사이가 꽉 찹니다.</p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/7605b86e6014b2ffe9fc0a3d2f9e333f.jpg" alt="퀘이사존"></p>
-                
-                <p>기보강 흡음재를 추가하지 않았다면 사진에서 보이는 흡음재의 공간이 비어있어 스위치 타건 시 압력에 의해<br>
-                     키보드 내부에서 소리가 울리는 공간이 늘어나게 됩니다.</p>
-                <p><br></p>    
-                <p><br></p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/6e2ca16bb7acc0cb45df10519435bf87.jpg" alt="퀘이사존"></p>
-                
-                <p>'스위치 하부 흡음재'와 '기보강 흡음재'를 추가한 사진입니다. 사진과 같이 잡음이 울릴 공간을 주지 않고<br>
-                    새어나가는 잡음마저 흡수한다면 스위치의 정갈한 소리만 느끼실 수 있습니다. </p>
-                <p><br></p>
-                <p><br></p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/6e8dc3deb1c4f8e811e9f8a9019df3bb.jpg" alt="퀘이사존"></p>
-                
-                <p>하우징의 하판 위에 얹는 흡음재는 신슐레이트 3T로 했습니다.</p>
-                <p><br></p>
-                <p><br></p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/b50647c9d996ba2571f76dd1381fead4.jpg" alt="퀘이사존"></p>
-                <p>체결 할 스위치는 Tealios V2 67g 입니다. </p>
-                <p>Deskeys 스위치 필름 장착되있고, Krytox 윤활 되어있습니다.</p>
-                <p><br></p>
-                <p><br></p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/7aa910a08150bc217da6c618138a8034.jpg" alt="퀘이사존"></p>
-                <p><br></p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/047292725a01c2c25ebca7583d9dcbd0.jpg" alt="퀘이사존"></p>
-                <p><br></p>
-                <p>키캡은 GMK Pulse 제품입니다.</p>
-                <p><br></p>
-                <p><img src="https://img2.quasarzone.com/editor/2021/10/02/b496d7c384082452e69c45ce6f1a4785.jpg" alt="퀘이사존"></p>
-                <p><br></p>
-                </details>                             
-                
-                
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/5732998a9f1c08043a483ec4aacf7c03.jpg"
+                            alt="퀘이사존"></p>
+                    <p>PCB에 '스위치 하부 흡음재'와 '스테빌라이저 하부 흡음재'를 붙인 모습입니다.</p>
+                    <p><br></p>
+                    <p><br></p>
+
+
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/b612fc738bb8aec98f0bc46871263dc8.jpg"
+                            alt="퀘이사존"><br></p>
+                    <p>PCB와 보강판 사이의 흡음을 위해 포론 기보강 흡음재를 추가합니다.</p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p>아래 사진과 같이 PCB와 보강판 사이가 꽉 찹니다.</p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/7605b86e6014b2ffe9fc0a3d2f9e333f.jpg"
+                            alt="퀘이사존"></p>
+
+                    <p>기보강 흡음재를 추가하지 않았다면 사진에서 보이는 흡음재의 공간이 비어있어 스위치 타건 시 압력에 의해<br>
+                        키보드 내부에서 소리가 울리는 공간이 늘어나게 됩니다.</p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/6e2ca16bb7acc0cb45df10519435bf87.jpg"
+                            alt="퀘이사존"></p>
+
+                    <p>'스위치 하부 흡음재'와 '기보강 흡음재'를 추가한 사진입니다. 사진과 같이 잡음이 울릴 공간을 주지 않고<br>
+                        새어나가는 잡음마저 흡수한다면 스위치의 정갈한 소리만 느끼실 수 있습니다. </p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/6e8dc3deb1c4f8e811e9f8a9019df3bb.jpg"
+                            alt="퀘이사존"></p>
+
+                    <p>하우징의 하판 위에 얹는 흡음재는 신슐레이트 3T로 했습니다.</p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/b50647c9d996ba2571f76dd1381fead4.jpg"
+                            alt="퀘이사존"></p>
+                    <p>체결 할 스위치는 Tealios V2 67g 입니다. </p>
+                    <p>Deskeys 스위치 필름 장착되있고, Krytox 윤활 되어있습니다.</p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/7aa910a08150bc217da6c618138a8034.jpg"
+                            alt="퀘이사존"></p>
+                    <p><br></p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/047292725a01c2c25ebca7583d9dcbd0.jpg"
+                            alt="퀘이사존"></p>
+                    <p><br></p>
+                    <p>키캡은 GMK Pulse 제품입니다.</p>
+                    <p><br></p>
+                    <p><img src="https://img2.quasarzone.com/editor/2021/10/02/b496d7c384082452e69c45ce6f1a4785.jpg"
+                            alt="퀘이사존"></p>
+                    <p><br></p>
+                </details>
+
+
             </div>
-             
+
 
 
             <div id="section_blank5"></div>
 
 
-              
+
         </section>
         <aside>
             <div id="aside">
@@ -237,27 +254,29 @@
                                 keyboards.</td>
                         </tr>
                     </table>
-                    <table id="table2"  style="float: left;">			
-                        <tr>						
+                    <table id="table2" style="float: left;">
+                        <tr>
                             <td class="th">Company</td>
                             <td class="th">Helps</td>
-                            <td class="th">Partner</td>						
+                            <td class="th">Partner</td>
                         </tr>
-                        <tr>						
+                        <tr>
                             <td><a href="https://smartstore.naver.com/monstarkorea">MonstarGear</a></td>
                             <td><a href="https://www.gachon.ac.kr/kor/index.do">Gachon</a></td>
-                            <td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>		
+                            <td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>
                         </tr>
-                        <tr>						
+                        <tr>
                             <td><a href="http://www.funkeys.co.kr/">Funkeys</a></td>
                             <td><a href="https://www.google.com">Google</a></td>
-                            <td><a href="https://www.tistory.com/">Tistory</a></td>		
+                            <td><a href="https://www.tistory.com/">Tistory</a></td>
                         </tr>
-                        <tr>						
-                            <td><a href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a></td>
+                        <tr>
+                            <td><a
+                                    href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a>
+                            </td>
                             <td><a href="https://quasarzone.com/">Quasar zone</a></td>
-                            <td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>		
-                        </tr>					
+                            <td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>
+                        </tr>
                     </table>
                 </div>
                 <hr>
