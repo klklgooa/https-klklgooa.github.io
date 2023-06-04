@@ -8,14 +8,10 @@
     <link type="text/css" rel="stylesheet" href="css/style_switches.css">
     <script>
         var audio = new Audio();
-        function stopMusic() {
-            audio.pause();
-        }
 
         function check() {
-            if (audio.paused == false) {
-                stopMusic()
-            }
+            if (audio.paused == false)
+                stop()
 
             const genderNodeList
                 = document.getElementsByName('music');
@@ -26,7 +22,6 @@
                 }
             })
         }
-
         function playMusic(choice) {
             audio = new Audio(choice);
             audio.load();
@@ -42,34 +37,46 @@
 
     <div id="maindiv">
         <div id="wrap"
-            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/1.jpg); background-repeat: no-repeat;">
+            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/switches_main3.png); background-repeat: no-repeat;">
 
             <header>
                 <details id="music_details">
                     <summary>Music</summary>
                     <ul style="float: left;">
-                        <li><div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label for="Milky">mStone_Milky </label></div></li>
-                        
-                        <li><div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label for="Gatron">Gatron_Brown</label></div></li>
-    
-                        <li><div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label for="Meteor">SP-star_Meteor_white</label></div></li>
+                        <li>
+                            <div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label
+                                    for="Milky">mStone_Milky </label></div>
+                        </li>
+
+                        <li>
+                            <div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label
+                                    for="Gatron">Gatron_Brown</label></div>
+                        </li>
+
+                        <li>
+                            <div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label
+                                    for="Meteor">SP-star_Meteor_white</label></div>
+                        </li>
                     </ul>
                     <span>
-                        
-                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">  
+
+                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">
                         <input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">
-                                          
+
                     </span>
                 </details>
 
-                <span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png" alt="logo"></a></span>
+                <span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png"
+                            alt="logo"></a></span>
                 <ul class="gnb-menu">
-                    <li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4" class="active" title="MENU1">News</a></li>
+                    <li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4"
+                            class="active" title="MENU1">News</a></li>
                     <li><a href="https://klklgooa.github.io/parts.html" class="active" title="MENU2">Parts</a></li>
-                    <li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a></li>
+                    <li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a>
+                    </li>
                     <li><a href="https://klklgooa.github.io/absorb.html" class="active" title="MENU4">Absorb</a></li>
                     <li><a href="https://geon.works/" class="active" title="MENU5">Sell</a></li>
-              </ul>
+                </ul>
             </header>
 
             <div class="spot">
@@ -104,18 +111,19 @@
             <p><br></p>
             <p><br></p>
             <span id="parts_explain_p1" class="parts_explain">Find out the type and principle<br></span>
-            <span id="parts_explain_p2" class="parts_explain">of the switch and choose the right switch for you<br></span>
-            
+            <span id="parts_explain_p2" class="parts_explain">of the switch and choose the right switch for
+                you<br></span>
+
             <div id="section_blank4"></div>
 
             <div id="section3">
                 <img src="image/switches_main2.jpg" style="width: 650px; height: 370px; margin-left: 120px;">
                 <p><br></p>
                 <p>
-                    현재 다수의 스위치들이 체리 스위치의 유사 축으로 시작하여 파생되었습니다. 
-                    실제로 2014년 체리 키보드의 특허가 만료되면서 많은 호환축들이 나오기 시작했는데, 
+                    현재 다수의 스위치들이 체리 스위치의 유사 축으로 시작하여 파생되었습니다.
+                    실제로 2014년 체리 키보드의 특허가 만료되면서 많은 호환축들이 나오기 시작했는데,
                     겉보기에는 비슷한 형태를 가져도 실제로는 제조사마다 고유의 특징들을 집어넣어 사용자에게 각자 다른 키감을 선보입니다.
-                    때문에 키보드 사용자들은 기계식 키보드 스위치를 제조사, 키감, 소리, 압력, LED지원여부, 입력방식 등 
+                    때문에 키보드 사용자들은 기계식 키보드 스위치를 제조사, 키감, 소리, 압력, LED지원여부, 입력방식 등
                     많은 요소들을 고려하여 선택하는 편입니다.
                 </p>
                 <p><br></p>
@@ -125,86 +133,86 @@
                 <p><br></p>
                 <p>
                     따라서 현존하는 모든 기계식 스위치들의 근본이 되는 체리의 리니어 방식, 클릭 방식, 넌클릭 방식의 특징들을
-                    과 스위치의 세부 구조를 알아보고 본인이 마음에 드는 방식의 스위치를 더 현명하게 선택할 수 있습니다.  
+                    과 스위치의 세부 구조를 알아보고 본인이 마음에 드는 방식의 스위치를 더 현명하게 선택할 수 있습니다.
                 </p>
                 <p><br></p>
                 <p><br></p>
                 <img src="image/switch_parts.jpg" style="width: 75%px; height: 75%; margin-left: 36%;">
                 <p><br></p>
                 <p id="section3_parts_p">
-                    <p class="center_p">스위치의 세부구조</p><br>
-                    1. 상부 하우징(Upper Housing): 체리 MX 스위치 내부의 부품들이 고정되는 외곽의 윗부분이다.<br>
-                    2. 슬라이더(Slider)[51] 또는 스템(Stem): 체리 MX 스위치에서 위아래로 움직이는 부분. 전체를 스템이라고
-                    부르기도 하고, 키캡을 꽂을 수 있는 부분만 스템이라고 부르기도 한다. 2가 6을 때려서 나는 딱딱소리는 오링으로 감소시킬 수 있다<br>
-                    3. 클릭 재킷(Click Jacket)[52]: 클릭 스위치에서 클릭감을 만들어내는 부품. 당연히 리니어/넌클릭
-                    스위치에는 존재하지 않는다. 클릭 재킷과 슬라이더를 결합해서 안쪽에 순접을 뿌려서 드라이기로 굳혀버리면 갈축으로 만들어버릴 수 있다. 윤활할 때 겸으로 할 수 있다.<br>
-                    4. 금속 접점(Metal Contact): 스위치 입력을 결정하는 두 개의 부품. 맞닿으면 입력되고 떨어지면
-                    입력이 중단된다.<br>
-                    5. 스프링(Spring): 아래로 이동한 슬라이더를 다시 위로 올려주는 역할을 한다. 스프링의 재질과
-                    두께, 길이와 권수(감김 수)에 따라 키압이 결정된다. 판 스프링(Leaf Spring)을 사용하는 
-                    스위치도 있으나, 체리 MX 계열 스위치는 코일 스프링(Coil Spring)을 사용한다.<br>
-                    6. 하부 하우징(Housing Base): 체리 MX 스위치 내부의 부품들이 고정되는 외곽의 아랫부분이다.           
+                <p class="center_p">스위치의 세부구조</p><br>
+                1. 상부 하우징(Upper Housing): 체리 MX 스위치 내부의 부품들이 고정되는 외곽의 윗부분이다.<br>
+                2. 슬라이더(Slider)[51] 또는 스템(Stem): 체리 MX 스위치에서 위아래로 움직이는 부분. 전체를 스템이라고
+                부르기도 하고, 키캡을 꽂을 수 있는 부분만 스템이라고 부르기도 한다. 2가 6을 때려서 나는 딱딱소리는 오링으로 감소시킬 수 있다<br>
+                3. 클릭 재킷(Click Jacket)[52]: 클릭 스위치에서 클릭감을 만들어내는 부품. 당연히 리니어/넌클릭
+                스위치에는 존재하지 않는다. 클릭 재킷과 슬라이더를 결합해서 안쪽에 순접을 뿌려서 드라이기로 굳혀버리면 갈축으로 만들어버릴 수 있다. 윤활할 때 겸으로 할 수 있다.<br>
+                4. 금속 접점(Metal Contact): 스위치 입력을 결정하는 두 개의 부품. 맞닿으면 입력되고 떨어지면
+                입력이 중단된다.<br>
+                5. 스프링(Spring): 아래로 이동한 슬라이더를 다시 위로 올려주는 역할을 한다. 스프링의 재질과
+                두께, 길이와 권수(감김 수)에 따라 키압이 결정된다. 판 스프링(Leaf Spring)을 사용하는
+                스위치도 있으나, 체리 MX 계열 스위치는 코일 스프링(Coil Spring)을 사용한다.<br>
+                6. 하부 하우징(Housing Base): 체리 MX 스위치 내부의 부품들이 고정되는 외곽의 아랫부분이다.
                 </p>
-                
-                
+
+
                 <p><br></p>
                 <p><br></p>
                 <img src="image/cherry_red.gif" style="width: 300px; height: 270px; margin-left: 33%;">
                 <p><br></p>
                 <p>
-                    <p class="center_p">리니어(Linear) 스위치</p><br>
-                    스템의 돌기가 선형적(Linear), 즉 올곧은 직선이기 때문에 별도의 촉각적 걸림 없이 그대로 
-                    바닥까지 내려가는 스위치입니다.
-                    입력에 힘이 가장 적게 들고, 조금만 눌러도 입력이 되는 데다가 걸쇠가 걸리는 것을 신경 쓸 
-                    필요가 없기 때문에 빠른 입력이 중요한 FPS, AOS 게임 쪽에서 각광을 받고 있습니다. 그래서인지 
-                    모든 축 중에서 가장 인기가 많은 축입니다.<br>
-                    대표적인 스위치는 적축(MX Red), 흑축(MX Black), 스피드 은축(MX Speed Silver ),
-                    저소음 적축, 저소음 흑축등이 있습니다.                  
+                <p class="center_p">리니어(Linear) 스위치</p><br>
+                스템의 돌기가 선형적(Linear), 즉 올곧은 직선이기 때문에 별도의 촉각적 걸림 없이 그대로
+                바닥까지 내려가는 스위치입니다.
+                입력에 힘이 가장 적게 들고, 조금만 눌러도 입력이 되는 데다가 걸쇠가 걸리는 것을 신경 쓸
+                필요가 없기 때문에 빠른 입력이 중요한 FPS, AOS 게임 쪽에서 각광을 받고 있습니다. 그래서인지
+                모든 축 중에서 가장 인기가 많은 축입니다.<br>
+                대표적인 스위치는 적축(MX Red), 흑축(MX Black), 스피드 은축(MX Speed Silver ),
+                저소음 적축, 저소음 흑축등이 있습니다.
                 </p>
                 <p><br></p>
                 <p><br></p>
                 <img src="image/cherry_blue.gif" style="width: 300px; height: 270px; margin-left: 33%;">
                 <p><br></p>
                 <p>
-                    <p class="center_p">클릭/택타일 클릭(Clicky) 스위치</p><br>
-                    구조를 보면 스템이 걸쇠를 포함한 부분과 몸체로 나뉘어져 별도로 움직입니다. 해당 부품을 재킷이라고 부르는데,
-                     걸쇠의 돌기 부분이 완전히 통과하면 재킷이 반발력에 의해 강하게 하강하여 특유의 찰칵하는 클릭 사운드를
-                      만들어 내는게 특징인 스위치입니다. <br>
-                      청각적, 촉각적 피드백을 둘 다 최대한 자극적으로 유도하고 시원시원한 클릭음으로 인해 타건하는 재미가 있
-                      습니다. <br>
-                      단점으로는 클릭음의 소리가 크다는 점인데 이 부분은 클릭음이 키캡의 공간으로 인해 증폭되기 때문에 
-                      소음을 흡수할 수 있는 두툼한 키캡을 쓰거나, 잘 울리지 않도록 가볍고 옆이 트여있는 로우 프로파일 
-                      키캡을 쓰면 소음을 줄일 수 있습니다.
-                    
+                <p class="center_p">클릭/택타일 클릭(Clicky) 스위치</p><br>
+                구조를 보면 스템이 걸쇠를 포함한 부분과 몸체로 나뉘어져 별도로 움직입니다. 해당 부품을 재킷이라고 부르는데,
+                걸쇠의 돌기 부분이 완전히 통과하면 재킷이 반발력에 의해 강하게 하강하여 특유의 찰칵하는 클릭 사운드를
+                만들어 내는게 특징인 스위치입니다. <br>
+                청각적, 촉각적 피드백을 둘 다 최대한 자극적으로 유도하고 시원시원한 클릭음으로 인해 타건하는 재미가 있
+                습니다. <br>
+                단점으로는 클릭음의 소리가 크다는 점인데 이 부분은 클릭음이 키캡의 공간으로 인해 증폭되기 때문에
+                소음을 흡수할 수 있는 두툼한 키캡을 쓰거나, 잘 울리지 않도록 가볍고 옆이 트여있는 로우 프로파일
+                키캡을 쓰면 소음을 줄일 수 있습니다.
 
-                    </p>
-                    <p><br></p>
+
+                </p>
+                <p><br></p>
                 <p><br></p>
                 <img src="image/cherry_brown.gif" style="width: 300px; height: 270px; margin-left: 33%;">
                 <p><br></p>
                 <p>
-                    <p class="center_p">넌클릭(Non-Click) 스위치</p><br>
-                        리니어와 클릭의 사이라고도 불리우는 방식을 사용합니다. 청축과는 달리 중간 슬라이더가 없어 소음 자체는 
-                        적은 편이지만 촉각적 피드백을 주는 돌기 부분이 여전히 남아있습니다.
-                        누를때 돌기가 걸려 클릭감이 느껴지지만 청축과 달리 소음이 없습니다. 
-                        클릭 스위치의 장점 중 하나인 돌기가 걸리는 재미있는 타건감과 리니어 스위치의 장점인 정숙함이 합쳐져
-                        좋은 시너지를 발휘합니다. 하지만 두 장점을 모두 포함한다고 해서 기계식 키보드를 넌클릭으로 
-                        입문하게 된다면 이도저도 아닌 매력과 애매한 포지션 때문에 만족하지 못할 수도 있습니다. 
-                    
-                    </p>
-                <p><br></p>     
-                <p><br></p> 
+                <p class="center_p">넌클릭(Non-Click) 스위치</p><br>
+                리니어와 클릭의 사이라고도 불리우는 방식을 사용합니다. 청축과는 달리 중간 슬라이더가 없어 소음 자체는
+                적은 편이지만 촉각적 피드백을 주는 돌기 부분이 여전히 남아있습니다.
+                누를때 돌기가 걸려 클릭감이 느껴지지만 청축과 달리 소음이 없습니다.
+                클릭 스위치의 장점 중 하나인 돌기가 걸리는 재미있는 타건감과 리니어 스위치의 장점인 정숙함이 합쳐져
+                좋은 시너지를 발휘합니다. 하지만 두 장점을 모두 포함한다고 해서 기계식 키보드를 넌클릭으로
+                입문하게 된다면 이도저도 아닌 매력과 애매한 포지션 때문에 만족하지 못할 수도 있습니다.
+
+                </p>
+                <p><br></p>
+                <p><br></p>
                 <p>
-                    
+
                 </p>
             </div>
-             
+
 
 
             <div id="section_blank5"></div>
 
 
-              
+
         </section>
         <aside>
             <div id="aside">
@@ -225,27 +233,29 @@
                                 keyboards.</td>
                         </tr>
                     </table>
-                    <table id="table2"  style="float: left;">			
-                        <tr>						
+                    <table id="table2" style="float: left;">
+                        <tr>
                             <td class="th">Company</td>
                             <td class="th">Helps</td>
-                            <td class="th">Partner</td>						
+                            <td class="th">Partner</td>
                         </tr>
-                        <tr>						
+                        <tr>
                             <td><a href="https://smartstore.naver.com/monstarkorea">MonstarGear</a></td>
                             <td><a href="https://www.gachon.ac.kr/kor/index.do">Gachon</a></td>
-                            <td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>		
+                            <td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>
                         </tr>
-                        <tr>						
+                        <tr>
                             <td><a href="http://www.funkeys.co.kr/">Funkeys</a></td>
                             <td><a href="https://www.google.com">Google</a></td>
-                            <td><a href="https://www.tistory.com/">Tistory</a></td>		
+                            <td><a href="https://www.tistory.com/">Tistory</a></td>
                         </tr>
-                        <tr>						
-                            <td><a href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a></td>
+                        <tr>
+                            <td><a
+                                    href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a>
+                            </td>
                             <td><a href="https://quasarzone.com/">Quasar zone</a></td>
-                            <td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>		
-                        </tr>					
+                            <td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>
+                        </tr>
                     </table>
                 </div>
                 <hr>
