@@ -8,14 +8,10 @@
     <link type="text/css" rel="stylesheet" href="css/style_lubricate.css">
     <script>
         var audio = new Audio();
-        function stopMusic() {
-            audio.pause();
-        }
 
         function check() {
-            if (audio.paused == false) {
-                stopMusic()
-            }
+            if (audio.paused == false)
+                stop()
 
             const genderNodeList
                 = document.getElementsByName('music');
@@ -26,7 +22,6 @@
                 }
             })
         }
-
         function playMusic(choice) {
             audio = new Audio(choice);
             audio.load();
@@ -42,34 +37,46 @@
 
     <div id="maindiv">
         <div id="wrap"
-            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/1.jpg); background-repeat: no-repeat;">
+            style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/lube_main2.png); background-repeat: no-repeat;">
 
             <header>
                 <details id="music_details">
                     <summary>Music</summary>
                     <ul style="float: left;">
-                        <li><div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label for="Milky">mStone_Milky </label></div></li>
-                        
-                        <li><div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label for="Gatron">Gatron_Brown</label></div></li>
-    
-                        <li><div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label for="Meteor">SP-star_Meteor_white</label></div></li>
+                        <li>
+                            <div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label
+                                    for="Milky">mStone_Milky </label></div>
+                        </li>
+
+                        <li>
+                            <div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label
+                                    for="Gatron">Gatron_Brown</label></div>
+                        </li>
+
+                        <li>
+                            <div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label
+                                    for="Meteor">SP-star_Meteor_white</label></div>
+                        </li>
                     </ul>
                     <span>
-                        
-                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">  
+
+                        <input id="play_button" class="music_button" type="button" value="Play" onclick="check()">
                         <input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">
-                                          
+
                     </span>
                 </details>
 
-                <span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png" alt="logo"></a></span>
+                <span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png"
+                            alt="logo"></a></span>
                 <ul class="gnb-menu">
-                    <li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4" class="active" title="MENU1">News</a></li>
+                    <li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4"
+                            class="active" title="MENU1">News</a></li>
                     <li><a href="https://klklgooa.github.io/parts.html" class="active" title="MENU2">Parts</a></li>
-                    <li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a></li>
+                    <li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a>
+                    </li>
                     <li><a href="https://klklgooa.github.io/absorb.html" class="active" title="MENU4">Absorb</a></li>
                     <li><a href="https://geon.works/" class="active" title="MENU5">Sell</a></li>
-              </ul>
+                </ul>
             </header>
 
             <div class="spot">
@@ -103,7 +110,7 @@
             <p><br></p>
             <p><br></p>
             <span id="parts_explain_p1" class="parts_explain">Perform the lubrication</span><br>
-            <span id="parts_explain_p2" class="parts_explain">process of the switch 
+            <span id="parts_explain_p2" class="parts_explain">process of the switch
                 with various tips and information</span><br>
             <span id="parts_explain_p3" class="parts_explain"> and refine the sound of the switch.</span>
 
@@ -117,10 +124,11 @@
                 <p><span><br></span></p>
                 <p><span>스위치의 윤활 과정을 보기 전 윤활의 필요성을 느낄 수 있습니다.</span></p>
                 <p><span><br></span></p>
-                <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/qlWntw31lR4" width="640"
-                        height="360" class="note-video-clip" data-ruffle-polyfilled="">
+                <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/qlWntw31lR4"
+                        width="640" height="360" class="note-video-clip" data-ruffle-polyfilled="">
                     </iframe>
-                    <span><br></span></p>
+                    <span><br></span>
+                </p>
                 <p><span><br></span></p>
                 <p><span>직접 타건하지 않고 소리만 들어도 윤활 전후의 차이가 심한 걸 알수 있습니다.</span></p>
                 <p><span><br><img
@@ -151,45 +159,38 @@
                     <span><br></span>
                 </p>
                 <p><span><br></span></p>
-                <p>제일 먼저 <b>
-                        <font color="#000000" style="background-color: rgb(255, 156, 0);">
-                            <span style="color: rgb(0, 0, 0);">1. 스위치 윗부분를 따 줍니다.</span>​
-                        </font>
-                    </b> 오프너의 돌기와 스위치 걸쇠 위치를 정렬하고</p>
+                <p>제일 먼저 1. 스위치 윗부분를 분리시켜 줍니다.​ 오프너의 돌기와 스위치 걸쇠 위치를 정렬하고</p>
                 <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/2258b56f7b3f955731988af402f18058.jpg"
-                            alt="퀘이사존"></span><span>
-                        <br></span></p>
+                            alt="퀘이사존"></span>
+                    <span><br></span>
+                </p>
                 <p><span><br></span></p>
-                <p><span> 수직으로 꾹 누르면 열립니다.</span><span style="background-color: initial;">​</span></p>
+                <p><span> 수직으로 꾹 누르면 열리게 됩니다.</span></p>
                 <p><span><br>
                     </span></p>
                 <p><span>위의 스위치 오프너가 가장 베이직한 타입으로, 양손이 자유로워 효율적인 작업 동선이 나오는 게 특징입니다. 그래서 이미 윤활된 스위치에 쓰기 좋고 손에 윤활제가 묻지
-                        않도록 신경쓰면서도 작업 속도가 빠른 장점이 있습니다. 스위치 분해 직후에 부품 분류하기도 편합니다.</span>
-                </p>
-                
+                        않도록 신경쓰면서도 작업 속도가 빠른 장점이 있습니다. 스위치 분해 직후에 부품 분류하기도 편합니다.</span></p>
                 <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/b5ac1ed7fff2d2cb4358d496605b1d83.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
                 <p><span>부품은 왼쪽부터 하부 하우징, 스프링, 스템(슬라이더), 상부 하우징(뚜껑)이 있습니다. 이 중에 스프링과 스템만 윤활하면 됩니다.</span></p>
                 <p><br></p>
-                <p><span>한편 윤활이 이미 되어 있는 스위치를 재윤활하려면 먼저 세척을 해야 합니다.</span>
-                </p>
+                <p><span>한편 윤활이 이미 되어 있는 스위치를 재윤활하려면 먼저 세척을 해야 합니다.</span></p>
                 <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/412a922463afbe8ded5afb50c6c3782a.jpg"
                             alt="퀘이사존"></span>
                     <span><br></span>
                 </p>
                 <p><span><br></span></p>
-                <p><span style="color: rgb(0, 0, 0); background-color: rgb(255, 156, 0); font-weight: bold;">2. 분해한 하부
-                        하우징을 윤활 플레이트에 세팅해 주세요.</span> 이 제품은 스위치를 한 번에 90알씩만 끼울 수 있어 한 번에 더 많은 윤활을 하시는 분들은 더 큰 플레이트가 필요합니다.</p>
+                <p><span>2. 분해한 하부 하우징을 윤활 플레이트에 세팅해 주세요.</span>
+                    이 제품은 스위치를 한 번에 90알씩만 끼울 수 있어 한 번에 더 많은 윤활을 하시는 분들은 더 큰 플레이트가 필요합니다.</p>
                 <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/e0dbf98970a7021397b481076aca655c.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
-                <p><span style="color: rgb(0, 0, 0); background-color: rgb(255, 156, 0); font-weight: bold;">3. 다음은 스프링
-                        윤활입니다.</span>
+                <p><span>3. 다음은 스프링 윤활입니다.</span>
                     기존 체결되어 있는 체리의 순정 스프링 대신 Sprit Supreme(=숏프링=짧은 스프링) 78g짜리를 체결하려고 합니다. 닉시의 흑색에 어울리는 무거운 키압입니다.</p>
                 <p><span><br>
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/8c77d9391e1012458c89c8a66e4cf6df.jpg"
@@ -198,7 +199,8 @@
                 <p><span>스프링을 병이나 지퍼백에 넣고 오일 타입 윤활제 5~10방울도 떨군 뒤 잘 흔드시면 됩니다. 세심한 사람들은 스프링 하나하나 붓으로 윤활하던데 굳이 그렇게까지 할 필요는
                         없는 것 같습니다.</span></p>
                 <p><br></p>
-                <p><span>윤활제는 크라이톡스 107을 사용하였습니다. 점도가 낮은 105가 보편적으로 쓰이지만 점성이 높은 107이 더 효과적이라고 생각하였습니다. 스프링도 과윤활 되면 잡소리가 생길 수
+                <p><span>윤활제는 크라이톡스 107을 사용하였습니다. 점도가 낮은 105가 보편적으로 쓰이지만 점성이 높은 107이 더 효과적이라고 생각하였습니다. 스프링도 과윤활 되면 잡소리가
+                        생길 수
                         있으니 윤활을 마친 것들은 키친타올에 펼쳐 둡니다.</span></p>
                 <p>
                     <span><br><img
@@ -207,8 +209,7 @@
                 </p>
                 <p><span><br></span></p>
                 <p>하부에 스프링을 올리기 전에
-                    <span style="color: rgb(0, 0, 0); background-color: rgb(255, 156, 0); font-weight: bold;">+ 필름 작업이
-                        필요할 수도 있습니다.</span>
+                    <span>+ 필름 작업이 필요할 수도 있습니다.</span>
                     스위치 종류에 따라 상하부 하우징 간 유격이 있기도 한데 이는 잡소리의 원인이라 필름을 끼워 해결할 수 있습니다.
                     체리 스위치가 특히 심한 편이라 작업을 진행합니다. (유격 없는 스위치에는 되도록 쓰지 마세요)
                 </p>
@@ -229,7 +230,6 @@
                     <span><br><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/34bcef21cf034e4e2b82e9408d41abe0.jpg"
                             alt="퀘이사존"></span>
-
                     <span><br></span>
                 </p>
                 <p><span><br></span></p>
@@ -239,9 +239,8 @@
                             src="https://img2.quasarzone.com/editor/2023/04/09/3235f72c19af9ef2c769a2eef3c76f68.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
-                <p>필름 작업을 끝낸 다음 <span
-                        style="color: rgb(0, 0, 0); background-color: rgb(255, 156, 0); font-weight: bold;">스프링을 올립니다.
-                    </span> 나중에 필름을 끼울때 스프링이 걸리적거리기 때문에 순서를 뒤바꾸지 않는 것을 추천합니다. </p>
+                <p>필름 작업을 끝낸 다음 <span>스프링을 올립니다.</span>
+                    나중에 필름을 끼울때 스프링이 걸리적거리기 때문에 순서를 뒤바꾸지 않는 것을 추천합니다. </p>
                 <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/c28f1d63f06ce681ce3227450ab8a8dc.jpg"
                             alt="퀘이사존">
@@ -267,7 +266,8 @@
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/c35e0965620b10f20d2424cce25d8475.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
-                <p><span>위 사진 속 스템의 붉게 표시된 면을 윤활할 거에요. 파란색 기둥(폴)은 건들지 않도록 합니다. 윤활제가 닿았다가는 타건할 때 푸슉푸슉 거리는 잡음이 생깁니다.</span></p>
+                <p><span>위 사진 속 스템의 붉게 표시된 면을 윤활합니다. 파란색 기둥(폴)은 건들지 않도록 합니다. 윤활제가 닿았다가는 타건할 때 푸슉푸슉 거리는 잡음이 생깁니다.</span>
+                </p>
                 <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/ae04bbfe2f7701e6fdc07d97b42a6005.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
@@ -280,16 +280,13 @@
                     <span><br></span>
                 </p>
                 <p><br></p>
-                <p><span style="color: rgb(0, 0, 0); background-color: rgb(255, 156, 0); font-weight: bold;">
-                        4. 이제 스템 윤활을 시작합시다.</span> 슬라이더 픽커로 스템의 십자 부위를 잡고 열심히 붓질해 줍니다.</p>
-                
+                <p><span>4. 이제 스템 윤활을 시작합니다.</span>
+                    슬라이더 픽커로 스템의 십자 부위를 잡고 열심히 붓질해 줍니다.</p>
                 <p><span><br></span></p>
-                
                 <p><br></p>
                 <p><span>윤활제는 구리스 타입의 크라이톡스 205g2를 사용했습니다. </span></p>
                 <p><span><br></span></p>
                 <p><span>보통 크톡믹스(105+205g0)나 205g0가 많이 쓰이는데, 점성있는 205g2도 나쁘지 않습니다. 점도가 높을수록 타건음이 줄어듭니다. 크라이톡스의 경우</span>
-                    <span style="background-color: initial;">​</span>
                 </p>
                 <p><span><br></span></p>
                 <p><span>100번대=오일</span></p>
@@ -307,14 +304,14 @@
                 <p><span>스위치 윤활은 스위치 간의 편차를 최소화 하는 게 핵심입니다. 같은 양의 윤활제를 각 면마다
                         콕콕 찍은 뒤 마지막에 펴바르는 방식이 확실합니다. 윤활제의 양도 중요한데요, 과하면 찌걱임이 생기고 심한 경우 스템이 느리게 올라오기도 합니다.</span></p>
                 <p><span><br></span></p>
-                <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/s6AtoQGPobg" width="640"
-                        height="360" class="note-video-clip" data-ruffle-polyfilled=""></iframe>
+                <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/s6AtoQGPobg"
+                        width="640" height="360" class="note-video-clip" data-ruffle-polyfilled=""></iframe>
                     <span><br></span>
                 </p>
                 <p><span><br></span></p>
-                <p><span>요건 일부러 과윤활 한 사례인데, 먹먹한 타건음을 뚫고 윤활제 질척이는 소리가 들립니다. 기본적인 윤활량은 그냥 '스템 표면에 뭔가 묻어있는 게 보이는' 수준이 적당합니다.</span></p>
+                <p><span>영상은 일부러 과윤활을 한 사례인데, 먹먹한 타건음을 뚫고 윤활제 질척이는 소리가 들립니다. 기본적인 윤활량은 그냥 '스템 표면에 뭔가 묻어있는 게 보이는' 수준이
+                        적당합니다.</span></p>
                 <p><span><br></span></p>
-               
                 <p><span><br>
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/1b70a4222f71c8569499230cfaea7e02.jpg"
                             alt="퀘이사존"></span>
@@ -331,11 +328,8 @@
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/3c076759859c2a8ad7301614803ddf17.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
-                <p><span>한편 십자 스템을 벽으로 둘러싼 방진축은 밖으로 노출된 스템 면적을 확인해서 그 아래 부위를 윤활하시면 됩니다.</span>
-                    <span style="background-color: initial;">​</span>
-                </p>
+                <p><span>한편 십자 스템을 벽으로 둘러싼 방진축은 밖으로 노출된 스템 면적을 확인해서 그 아래 부위를 윤활하시면 됩니다.</span></p>
                 <p><span><br></span></p>
-                
                 <p><span><br>
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/9c8b408a9e3a8ed8d8a9469727e94969.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
@@ -346,19 +340,16 @@
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/93fd6eb52c93d5d9bfc04d1603bf01d3.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
-                <p><span style="color: rgb(0, 0, 0); background-color: rgb(255, 156, 0); font-weight: bold;">5. 마지막으로 뚜껑
-                        덮으면</span>스위치 윤활이 끝나게 됩니다.</p>
+                <p><span>5. 마지막으로 뚜껑을 덮으면</span>스위치 윤활이 끝나게 됩니다.</p>
                 <p><span><br>
                         <img src="https://img2.quasarzone.com/editor/2023/04/09/b291c44b5bd2ec1899556206db795729.jpg"
                             alt="퀘이사존"></span><span><br></span></p>
                 <p><span><br></span></p>
                 <p><span>기판에 체결전 (필름 작업을 했다면) 필름이 삐져나오진 않았는지, 스위치 스템을 하나씩 튕겨보며 팅팅거리는 소리가 들리진 않는지 확인하는 게 좋습니다.
                         팅팅거린다면 스프링을 꺼내 양끝에 윤활제를 덧바르면 해결됩니다.</span></p>
-                <p>
-                    <span><br><img
+                <p><span><br><img
                             src="https://img2.quasarzone.com/editor/2023/04/09/20227e5f1134967d50613a5a447e1b47.jpg"
-                            alt="퀘이사존"></span>
-                </p>
+                            alt="퀘이사존"></span></p>
                 <p><span><br></span></p>
                 <p><span>다음은 윤활한 스위치의 타건영상입니다.</span></p>
                 <p><br></p>
@@ -368,26 +359,16 @@
                 <p><br></p>
                 <p><br></p>
                 <p><br></p>
-                <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/d49zn9P0gIQ" width="640"
-                        height="360" class="note-video-clip" data-ruffle-polyfilled=""></iframe></p>
+                <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/d49zn9P0gIQ"
+                        width="640" height="360" class="note-video-clip" data-ruffle-polyfilled=""></iframe></p>
                 <p><br></p>
-                <p>​
-                </p>
-                <p>
-                </p>
-                <p>
-                </p>
-
-
             </div>
             <div id="section_blank5"></div>
-
         </section>
         <aside>
             <div id="aside">
             </div>
         </aside>
-
         <footer>
             <div id="footer">
                 <div id="footer_about">
@@ -402,27 +383,29 @@
                                 keyboards.</td>
                         </tr>
                     </table>
-                    <table id="table2"  style="float: left;">			
-                        <tr>						
+                    <table id="table2" style="float: left;">
+                        <tr>
                             <td class="th">Company</td>
                             <td class="th">Helps</td>
-                            <td class="th">Partner</td>						
+                            <td class="th">Partner</td>
                         </tr>
-                        <tr>						
+                        <tr>
                             <td><a href="https://smartstore.naver.com/monstarkorea">MonstarGear</a></td>
                             <td><a href="https://www.gachon.ac.kr/kor/index.do">Gachon</a></td>
-                            <td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>		
+                            <td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>
                         </tr>
-                        <tr>						
+                        <tr>
                             <td><a href="http://www.funkeys.co.kr/">Funkeys</a></td>
                             <td><a href="https://www.google.com">Google</a></td>
-                            <td><a href="https://www.tistory.com/">Tistory</a></td>		
+                            <td><a href="https://www.tistory.com/">Tistory</a></td>
                         </tr>
-                        <tr>						
-                            <td><a href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a></td>
+                        <tr>
+                            <td><a
+                                    href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a>
+                            </td>
                             <td><a href="https://quasarzone.com/">Quasar zone</a></td>
-                            <td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>		
-                        </tr>					
+                            <td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>
+                        </tr>
                     </table>
                 </div>
                 <hr>
