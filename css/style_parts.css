@@ -239,6 +239,9 @@ section {
 #section_blank4 {
 	height: 300px;
 }
+#section3 details {
+	font-weight: 800;
+}
 #section3 summary {
 	outline: none;
 	cursor: pointer;
@@ -253,7 +256,7 @@ section {
 	height: 75%;
 }
 #section_blank5 {
-	height: 400px;
+	height: 250px;
 }
 .scrollToTop {
 	position:fixed;
