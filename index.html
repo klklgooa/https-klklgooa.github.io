@@ -13,10 +13,9 @@
 			if (audio.paused == false)
 				stop()
 
-			const genderNodeList
-				= document.getElementsByName('music');
+			const musicNodeList = document.getElementsByName('music');
 
-			genderNodeList.forEach((node) => {
+			musicNodeList.forEach((node) => {
 				if (node.checked) {
 					playMusic(node.value);
 				}
