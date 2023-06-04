@@ -7,30 +7,29 @@
     <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link type="text/css" rel="stylesheet" href="css/style_absorb.css">
     <script>
-        var audio = new Audio();
+		var audio = new Audio();
 
-        function check() {
-            if (audio.paused == false)
-                stop()
+		function check() {
+			if (audio.paused == false)
+				stop()
 
-            const genderNodeList
-                = document.getElementsByName('music');
+			const musicNodeList = document.getElementsByName('music');
 
-            genderNodeList.forEach((node) => {
-                if (node.checked) {
-                    playMusic(node.value);
-                }
-            })
-        }
-        function playMusic(choice) {
-            audio = new Audio(choice);
-            audio.load();
-            audio.play();
-        }
-        function stop() {
-            audio.pause();
-        }
-    </script>
+			musicNodeList.forEach((node) => {
+				if (node.checked) {
+					playMusic(node.value);
+				}
+			})
+		}
+		function playMusic(choice) {
+			audio = new Audio(choice);
+			audio.load();
+			audio.play();
+		}
+		function stop() {
+			audio.pause();
+		}
+	</script>
 </head>
 
 <body>
