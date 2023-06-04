@@ -1,218 +1,239 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Keyard</title>
-<link type="text/css" rel="stylesheet" href="css/reset.css">
-<link type="text/css" rel="stylesheet" href="css/style_index.css">
-<script>
-	var audio =  new Audio();
-	function stopMusic() {
-		audio.pause();
-	}
+	<meta charset="utf-8">
+	<title>Keyard</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/style_index.css">
+	<script>
+		var audio = new Audio();
 
-	function check() {
-		if(audio.paused == false){
-			stopMusic()
+		function check() {
+			if (audio.paused == false)
+				stop()
+
+			const genderNodeList
+				= document.getElementsByName('music');
+
+			genderNodeList.forEach((node) => {
+				if (node.checked) {
+					playMusic(node.value);
+				}
+			})
 		}
-		
-		const genderNodeList
-			= document.getElementsByName('music');
-
-		genderNodeList.forEach((node) => {
-		 if(node.checked)  {
-		 playMusic(node.value);
-		 }       
-		})
-	}
-
-	function playMusic(choice) {   
-		audio = new Audio(choice);
-		audio.load();
-		audio.play();
-	}
-	function stop() {
-		audio.pause();
-	}
-</script>
+		function playMusic(choice) {
+			audio = new Audio(choice);
+			audio.load();
+			audio.play();
+		}
+		function stop() {
+			audio.pause();
+		}
+	</script>
 </head>
+
 <body>
 	<span id="logo_new">Keyard</span>
 
 
 
 	<div id="maindiv">
-	<div id="wrap" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/varmilo.jpg); background-repeat: no-repeat;">
-		<header>
-			<details id="music_details">
-				<summary>Music</summary>
-				<ul style="float: left;">
-					<li><div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label for="Milky">mStone_Milky </label></div></li>
-					
-					<li><div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label for="Gatron">Gatron_Brown</label></div></li>
+		<div id="wrap"
+			style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),url(image/varmilo.jpg); background-repeat: no-repeat;">
+			<header>
+				<details id="music_details">
+					<summary>Music</summary>
+					<ul style="float: left;">
+						<li>
+							<div><input type="radio" id="Milky" name="music" value="music/Milky.mp3"> <label
+									for="Milky">mStone_Milky </label></div>
+						</li>
 
-					<li><div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label for="Meteor">SP-star_Meteor_white</label></div></li>
+						<li>
+							<div><input type="radio" id="Gatron" name="music" value="music/Gatron.mp3"> <label
+									for="Gatron">Gatron_Brown</label></div>
+						</li>
+
+						<li>
+							<div><input type="radio" id="Meteor" name="music" value="music/Meteor_white.mp3"> <label
+									for="Meteor">SP-star_Meteor_white</label></div>
+						</li>
+					</ul>
+					<span>
+
+						<input id="play_button" class="music_button" type="button" value="Play" onclick="check()">
+						<input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">
+
+					</span>
+				</details>
+				<span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png"
+							alt="logo"></a></span>
+				<ul class="gnb-menu">
+					<li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4"
+							class="active" title="MENU1">News</a></li>
+					<li><a href="https://klklgooa.github.io/parts.html" class="active" title="MENU2">Parts</a></li>
+					<li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a>
+					</li>
+					<li><a href="https://klklgooa.github.io/absorb.html" class="active" title="MENU4">Absorb</a></li>
+					<li><a href="https://geon.works/" class="active" title="MENU5">Sell</a></li>
 				</ul>
-				<span>
-					
-					<input id="play_button" class="music_button" type="button" value="Play" onclick="check()">  
-					<input id="stop_button" class="music_button" type="button" value="Stop" onclick="stop()">
-									  
-				</span>
-			</details>
-			<span id="logoimg"><a href="https://klklgooa.github.io/" title="LOGO"><img src="image/logo7.png" alt="logo"></a></span>
-			<ul class="gnb-menu">
-      			<li><a href="https://coolenjoy.net/bbs/38?sca=%ED%82%A4%EB%B3%B4%EB%93%9C%EB%A7%88%EC%9A%B0%EC%8A%A4" class="active" title="MENU1">News</a></li>
-      			<li><a href="https://klklgooa.github.io/parts.html" class="active" title="MENU2">Parts</a></li>
-      			<li><a href="https://klklgooa.github.io/lubricate.html" class="active" title="MENU3">Lubricate</a></li>
-      			<li><a href="https://klklgooa.github.io/absorb.html" class="active" title="MENU4">Absorb</a></li>
-      			<li><a href="https://geon.works/" class="active" title="MENU5">Sell</a></li>
-    		</ul>	
-		</header>
+			</header>
 
-	<div class="spot">
-      <div>
-      <div id="mainimg2">
-		<img src="./image/parts.jpg">
-	  </div>	
-      <dl>
-        <dt id="dt1"></dt>
-        <dt>Custom your <br>KeyBoard!</dt>
-        <dd>Create your own special keyboard based on the information from the 'keyard'</dd>      
-		
-      </dl>
-      <a href= "https://klklgooa.github.io/parts.html" title="Go http">
-      	<button>GO<span class="blet-arr"></span></button>
-      </a>
-      </div>
-    </div>
-						
-	</div>	
-	<nav>
-		<div id="nav">
-		</div>
-	</nav>
-	<section>
-		<div id="section_blank1"></div>
-		<div id="section1">
-			<p>Interior Design Doesn't Have to Be<br>Expensive or Complicated! It Should Be Smart</p>
-		</div>
-		<div id="section_blank2"></div>
-		<div id="section2">
-			<div id="section2_img">
-				<a href="https://klklgooa.github.io/switches.html"><img src="./image/switch.jpg"></a>
-			</div>
-			<div id="section2_p">
-				<div id="section2_p_blank"></div>
-				<h1 style="width: 200px;">Watch more switches</h1>
+			<div class="spot">
 				<div>
-					<p id="section2_p1">To see the principles<br> and types of switches</p>
-				</div>
-				<div>
-					<p id="section2_p2">
-					Switches are a mechanical keyboard's most important feature. Switch feel will always be a matter of personal preference, but we've
-					organized reviews, specifications, products, images, and more to make researching your perfect switch easier than ever.</p>
-				</div>
-				
-			</div>
-	  	</div>
-	  	<p id="switches_tag">MonstarGear's Switches</p>
-	  	<div id="section_blank3"></div>
+					<div id="mainimg2">
+						<img src="./image/parts.jpg">
+					</div>
+					<dl>
+						<dt id="dt1"></dt>
+						<dt>Custom your <br>KeyBoard!</dt>
+						<dd>Create your own special keyboard based on the information from the 'keyard'</dd>
 
-	  	<div id="section3">
-			<div id="section3_img">
-				<a href="https://www.monstargear.co.kr/118/?idx=395"><img id="switch2" src="./image/switch2.jpg"></a>
+					</dl>
+					<a href="https://klklgooa.github.io/parts.html" title="Go http">
+						<button>GO<span class="blet-arr"></span></button>
+					</a>
+				</div>
 			</div>
-			<div id="section3_p">
-				<div id="section3_p_blank"></div>
-				<h1>Today's Switch recommendation</h1>
-				<div>
-					<p id="section3_p1">Gazzew Boba U4 Switches <br>Low noise, Noneclick</p>
+
+		</div>
+		<nav>
+			<div id="nav">
+			</div>
+		</nav>
+		<section>
+			<div id="section_blank1"></div>
+			<div id="section1">
+				<p>Interior Design Doesn't Have to Be<br>Expensive or Complicated! It Should Be Smart</p>
+			</div>
+			<div id="section_blank2"></div>
+			<div id="section2">
+				<div id="section2_img">
+					<a href="https://klklgooa.github.io/switches.html"><img src="./image/switch.jpg"></a>
 				</div>
-				<div>
-					<p id="section3_p2">
-						The "Gazew Boba U4" is a non-click switch characterized by round locking, 
-						which uses a softer material than nylon to create a housing that provides a clean 
-						sense of height. The Boba switch is loved by many non-click enthusiasts for its unique jam.</p>
+				<div id="section2_p">
+					<div id="section2_p_blank"></div>
+					<h1 style="width: 200px;">Watch more switches</h1>
+					<div>
+						<p id="section2_p1">To see the principles<br> and types of switches</p>
+					</div>
+					<div>
+						<p id="section2_p2">
+							Switches are a mechanical keyboard's most important feature. Switch feel will always be a
+							matter of personal preference, but we've
+							organized reviews, specifications, products, images, and more to make researching your
+							perfect switch easier than ever.</p>
+					</div>
+
 				</div>
-				
-			</div>		
-	  	</div>
-		<p id="Gazzew">Gazzew Boba U4 Switches</p>
-		<div id="section_blank4"></div>
-		<div id="section4">
-			<p>Click the icon to view information <br>about your customization</p>
-		</div>
-		<div id="section_blank5"></div>
-		<div id="images">
-			<a href="https://klklgooa.github.io/parts.html"><img src="image/component.png"></a>
-			<a href="https://klklgooa.github.io/lubricate.html"><img src="image/lube_main.png" class="imagesclass"></a>
-			<a href="https://klklgooa.github.io/absorb.html"><img id="sound_absorption"class="imagesclass" src="image/absorp1.png"></a>
-		</div>
-		<div id="image_tag">
-			<table id="image_table">
-				<td id="Parts_tag">Parts and descriptions</td>
-				<td id="Lube_tag">Lubricate</td>
-				<td>Sound absorption</td>
-			</table>
-		</div>
-		
-	</section>
-	<aside>
-		<div id="aside">
-		</div>
-	</aside>
-	
-	<footer>
-		<div id="footer">
-			<div id="footer_about">
-				<table id="table1" style="float: left;">
-					<tr>
-						<td id="footer_about_logo"><a href="https://klklgooa.github.io/"><img src="image/logo7.png"></a></td>
-					</tr>
-					<tr>
-						<td rowspan="3">'Keyard' is a website that helps <br>users customize their 
-							keyboards <br>and contains various information <br> about custom 
-							keyboards.</td>
-					</tr>					
-				</table>
-				<table id="table2"  style="float: left;">			
-					<tr>						
-						<td class="th">Company</td>
-						<td class="th">Helps</td>
-						<td class="th">Partner</td>						
-					</tr>
-					<tr>						
-						<td><a href="https://smartstore.naver.com/monstarkorea">MonstarGear</a></td>
-						<td><a href="https://www.gachon.ac.kr/kor/index.do">Gachon</a></td>
-						<td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>		
-					</tr>
-					<tr>						
-						<td><a href="http://www.funkeys.co.kr/">Funkeys</a></td>
-						<td><a href="https://www.google.com">Google</a></td>
-						<td><a href="https://www.tistory.com/">Tistory</a></td>		
-					</tr>
-					<tr>						
-						<td><a href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a></td>
-						<td><a href="https://quasarzone.com/">Quasar zone</a></td>
-						<td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>		
-					</tr>					
+			</div>
+			<p id="switches_tag">MonstarGear's Switches</p>
+			<div id="section_blank3"></div>
+
+			<div id="section3">
+				<div id="section3_img">
+					<a href="https://www.monstargear.co.kr/118/?idx=395"><img id="switch2"
+							src="./image/switch2.jpg"></a>
+				</div>
+				<div id="section3_p">
+					<div id="section3_p_blank"></div>
+					<h1>Today's Switch recommendation</h1>
+					<div>
+						<p id="section3_p1">Gazzew Boba U4 Switches <br>Low noise, Noneclick</p>
+					</div>
+					<div>
+						<p id="section3_p2">
+							The "Gazew Boba U4" is a non-click switch characterized by round locking,
+							which uses a softer material than nylon to create a housing that provides a clean
+							sense of height. The Boba switch is loved by many non-click enthusiasts for its unique jam.
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<p id="Gazzew">Gazzew Boba U4 Switches</p>
+			<div id="section_blank4"></div>
+			<div id="section4">
+				<p>Click the icon to view information <br>about your customization</p>
+			</div>
+			<div id="section_blank5"></div>
+			<div id="images">
+				<a href="https://klklgooa.github.io/parts.html"><img src="image/component.png"></a>
+				<a href="https://klklgooa.github.io/lubricate.html"><img src="image/lube_main.png"
+						class="imagesclass"></a>
+				<a href="https://klklgooa.github.io/absorb.html"><img id="sound_absorption" class="imagesclass"
+						src="image/absorp1.png"></a>
+			</div>
+			<div id="image_tag">
+				<table id="image_table">
+					<td id="Parts_tag">Parts and descriptions</td>
+					<td id="Lube_tag">Lubricate</td>
+					<td>Sound absorption</td>
 				</table>
 			</div>
-			<hr>
-			<div id="footer_copyright">
-				<address>
-					University of Southern California Los Angeles, CA 970310
-					(213) 740-2311
-				</address>
-				<p>Conditions of UsePrivacy NoticeInterest-Based Ads© 1997-2023, Keyard.com, Inc. or its affiliates</p>
+
+		</section>
+		<aside>
+			<div id="aside">
 			</div>
-			<div class="scrollToTop">
-				<a href="#maindiv"><img src="image/scroll_up.png"></a>
+		</aside>
+
+		<footer>
+			<div id="footer">
+				<div id="footer_about">
+					<table id="table1" style="float: left;">
+						<tr>
+							<td id="footer_about_logo"><a href="https://klklgooa.github.io/"><img
+										src="image/logo7.png"></a></td>
+						</tr>
+						<tr>
+							<td rowspan="3">'Keyard' is a website that helps <br>users customize their
+								keyboards <br>and contains various information <br> about custom
+								keyboards.</td>
+						</tr>
+					</table>
+					<table id="table2" style="float: left;">
+						<tr>
+							<td class="th">Company</td>
+							<td class="th">Helps</td>
+							<td class="th">Partner</td>
+						</tr>
+						<tr>
+							<td><a href="https://smartstore.naver.com/monstarkorea">MonstarGear</a></td>
+							<td><a href="https://www.gachon.ac.kr/kor/index.do">Gachon</a></td>
+							<td><a href="https://www.youtube.com/@Taek_E">TechTaekE</a></td>
+						</tr>
+						<tr>
+							<td><a href="http://www.funkeys.co.kr/">Funkeys</a></td>
+							<td><a href="https://www.google.com">Google</a></td>
+							<td><a href="https://www.tistory.com/">Tistory</a></td>
+						</tr>
+						<tr>
+							<td><a
+									href="https://smartstore.naver.com/swagkey/category/fbbf349440f9459cb6d8a252f93cdfa0">Swagkey</a>
+							</td>
+							<td><a href="https://quasarzone.com/">Quasar zone</a></td>
+							<td><a href="https://blog.naver.com/12tuna">YoonELEC</a></td>
+						</tr>
+					</table>
+				</div>
+				<hr>
+				<div id="footer_copyright">
+					<address>
+						University of Southern California Los Angeles, CA 970310
+						(213) 740-2311
+					</address>
+					<p>Conditions of UsePrivacy NoticeInterest-Based Ads© 1997-2023, Keyard.com, Inc. or its affiliates
+					</p>
+				</div>
+				<div class="scrollToTop">
+					<a href="#maindiv"><img src="image/scroll_up.png"></a>
+				</div>
 			</div>
-		</div>
-	</footer>
- 	
- 	</div>
+		</footer>
+
+	</div>
 </body>
+
 </html>
