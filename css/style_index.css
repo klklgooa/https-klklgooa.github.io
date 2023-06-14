@@ -4,7 +4,6 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
 }
 
 #maindiv {
@@ -12,33 +11,24 @@ body {
 	overflow: hidden;
 }
 
-span {
-	position: absolute;
-	width: 100px;
-	height: 100px;
-
-}
-
-header {
-	width: 100%;
-	height: 100px;
-}
-
 #logoimg {
+	position: absolute;
+	width: 150px;
+	height: 50px;
 	margin-top: 20px;
-	margin-left: 18%;
+	margin-left: 90%;
 }
 
-header img {
+#logoimg img {
 	width: 150px;
 	height: 50px;
 }
 
-header a {
-	width: 120px;
-	height: 90px;
+#logoimg a {
+	width: 200px;
+	height: 50px;
+	margin-top: 20px;
 }
-
 #music_details div {
 	height: 20px;
 	margin-top: 0px;
@@ -101,22 +91,21 @@ label {
 }
 
 .gnb-menu li {
-	float: left;
+	width: 30px;
 	height: 90px;
 	margin: 0 1px
 }
 
 .gnb-menu {
 	float: right;
-	margin-right: 15%
+	margin-right: 5%;
+	margin-top: 150px;
 }
 
 .gnb-menu li a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	
 	text-align: center;
-	line-height: 1px;
+	line-height: 20px;
 	font-weight: 600;
 	font-size: 20px;
 	font-family: 'Noto Sans CJK KR Regular' sans-serif;
@@ -132,6 +121,7 @@ label {
 
 .spot {
 	position: relative;
+	width: 94%;
 	height: 60%;
 }
 
@@ -558,7 +548,10 @@ footer {
 }
 
 #footer_copyright {
-	margin-top: 45px;
+	height: 50px;
+	position: absolute;
+	margin-left: 38%;
+	margin-top: 37px;
 }
 
 #footer_copyright address {
@@ -570,17 +563,19 @@ footer {
 
 #footer_copyright p {
 	width: 100%;
+	height: 20px;
 	margin: 0 auto;
 	text-align: center;
 	color: #ccc;
 }
 
-footer p {
-	margin-top: 10px;
+#footer p {
 	font-size: 12px;
-	height: 120px;
 }
-
+hr {
+	margin-top: 70px;
+	margin: 0px;
+}
 #logo_new {
 	font-family: 'EF_jejudoldam';
 	font-size: 50px;
